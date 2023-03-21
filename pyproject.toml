@@ -1,0 +1,16 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'example'
+version = '0.0.1'
+dependencies = [
+    'django',
+    'pytest-django',
+    'pytest-playwright',
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
